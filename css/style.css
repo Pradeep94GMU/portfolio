@@ -4,13 +4,20 @@
 	font-family: 'Josefin Sans', sans-serif;
 	box-sizing: border-box;
 }
+.*:hover{
+	transform: scale(1.2);
+}
 .hero{
 	height: 100vh;
 	width: 100%;
+	//opacity: 0.3;
 	background-image: url(../img/LRM_EXPORT_20180911_020110.jpeg);
+	
+	background-opacity: 0.3;
 	background-size: cover;
 	background-position: center;
 }
+
 nav{
 	display: flex;
 	align-items: center;
