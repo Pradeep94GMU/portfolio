@@ -17,8 +17,12 @@
 	background-size: cover;
 	background-position: center;
 }
+.hero {
+    background-image: url(../img/LRM_EXPORT_20180911_020110.jpeg);
+    opacity: 0.85;
+}
 .revealUp {
-  opacity: 0;
+  opacity: 0.3;
   visibility: hidden;
 }
 .spacer {
@@ -245,6 +249,7 @@ h5{
 	display: flex;
 	align-items: center;
 	flex-direction: column;
+	transition-duration: 0.4s
 	justify-content: center;
 }
 .contact-me p{
@@ -258,8 +263,9 @@ h5{
 	color: white;
 	text-decoration: none;
 	border: 2px solid transparent;
+	transition-duration: 0.4s
 	font-weight: bold;
-	padding: 13px 30px;
+	padding: 10px 20px;
 	border-radius: 30px;
 	transition: .4s; 
 }
