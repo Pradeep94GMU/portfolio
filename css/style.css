@@ -32,7 +32,7 @@
 /* The typewriter cursor effect */
 @keyframes blink-caret {
   from, to { border-color: transparent }
-  0% { border-color: orange }
+ 0% { border-color: orange }
 }
 
 .hero{
@@ -58,12 +58,16 @@ nav{
 	padding-top: 45px;
 	padding-left: 8%;
 	padding-right: 8%;
+	transition: transform .4s; 
+
 }
 .logo{
 	color: white;
 	font-size: 35px;
 	letter-spacing: 1px;
 	cursor: pointer;
+	transition: transform .4s; 
+	transform: scale(1.2);
 }
 span{
 	color: #f9004d;
@@ -72,17 +76,26 @@ nav ul li{
 	list-style-type: none;
 	display: inline-block;
 	padding: 10px  25px;
+	transition: transform .4s; 
 }
 nav ul li a{
 	color: white;
 	text-decoration: none;
 	font-weight: bold;
 	text-transform: capitalize;
+	transition: transform .4s; 
 }
 nav ul li a:hover{
 	color: #f9004d;
-	transition: .4s;
+	transition: transform .4s; 
+	transition: 0.4s;
+	transform: scale(1.2);
 }
+
+
+
+
+
 .btn{
 	background-color:#f9004d;
 	color: white;
@@ -195,8 +208,8 @@ button{
 	transition: .4s; 
 }
 button:hover{
-	background-color: transparent;
-	border: 2px solid #f9004d;
+	background-color: #f9004d;
+	border: 2px solid #b9007d;
 	cursor: pointer;
 }
 
