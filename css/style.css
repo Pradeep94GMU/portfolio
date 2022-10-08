@@ -5,8 +5,36 @@
 	box-sizing: border-box;
 }
 .*:hover{
-	transform: scale(1.2);
+	transform: scale(4.4);
 }
+/* GLOBAL STYLES */
+
+
+/* DEMO-SPECIFIC STYLES */
+.typewriter h1 {
+  color: #fff;
+  font-family: monospace;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid orange; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+  animation: typing 3.5s steps(30, end),
+    blink-caret .5s step-end 0;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  0% { border-color: orange }
+}
+
 .hero{
 	height: 100vh;
 	width: 100%;
@@ -21,14 +49,7 @@
     background-image: url(../img/LRM_EXPORT_20180911_020110.jpeg);
     opacity: 0.85;
 }
-.revealUp {
-  opacity: 0.3;
-  visibility: hidden;
-}
-.spacer {
-  height: 50vh;
-  background-color: #000;
-}
+
 
 nav{
 	display: flex;
@@ -275,7 +296,7 @@ h5{
 	cursor: pointer;
 }
 footer{
-	position: relative;
+	
 	width: 100%;
 	height: 400px;
 	background: #101010;
@@ -283,6 +304,16 @@ footer{
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
+	position: relative;	
+	animation-name: example;
+    animation-duration: 40s;
+    animation-delay: 1s;
+}
+@keyframes example {
+  0%   {background-color: red;}
+  25%  {background-color: yellow;}
+  50%  {background-color: blue;}
+  100% {background-color: green;}
 }
 footer p:nth-child(1){
 	font-size: 30px;
